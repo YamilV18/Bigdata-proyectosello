@@ -1,0 +1,16 @@
+# compose.yml
+
+name: proyectosello-bd
+services:
+  pyspark:
+    container_name: proyecto-pyspark
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - "4488:8888"
+      - "4042:4040"
+    environment:
+      - JUPYTER_TOKEN=sintoken
+    volumes:
+      - ./:/opt

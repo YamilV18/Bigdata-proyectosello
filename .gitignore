@@ -1,0 +1,19 @@
+# Archivos de datos pesados (excluir el CSV grande pero conservar el zip si se desea)
+data/*.csv
+!data/*.zip
+
+# Entornos virtuales y dependencias
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+**/ .ipynb_checkpoints/
+
+# Directorios de sistema y OS
+.DS_Store
+Thumbs.db
+
+# Docker y volúmenes locales temporales
+.docker/
