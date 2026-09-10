@@ -17,3 +17,7 @@ Thumbs.db
 
 # Docker y volúmenes locales temporales
 .docker/
+
+data/silver/
+
+artifacts/
